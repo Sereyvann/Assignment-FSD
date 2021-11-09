@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(24, 149, 207);
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.navbar .menu ul li a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    padding: 8px 25px;
+    transition: all;
+}
+
+/* Logo */
+.navbar .logo{
+    margin: auto;
+    margin-left: 50px;
+    height: 85px;
+    width: 85px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+/* Home section */
+.home{
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    background-color: lightblue;
+    color: black;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto;
+}
+.home .home-center .text1{
+    font-size: 27px;
+}
+.home .home-center .text2{
+    font-size: 90px;
+    font-weight: 600;
+    /* margin-left: -3px; */
+}
+.home .home-center .text3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-center .text3 span{
+    color: rgb(24, 149, 207);
+    font-weight: 500;
+}
+.home .home-center .button{
+    width: 100px;
+    text-align: center;
+    padding: 8px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(10, 207, 241);
+    border: 0px;
+}
+.button{
+    padding: 50px;
+}
+.home .home-center{
+    margin: right;
+}
+
+section{
+    padding: 100px 0;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(24, 149, 207);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+/* About me */
+
+.about, .technology{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title::after{
+    content: "who I am";
+}
+.about .about-content,
+.technology .technology-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.abount-content{
+    margin: 40px;
+    display: flex;
+    flex-direction: row; 
+}
+.abount-content img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    width: 45%;
+}
+.abount-content p{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 55%;
+}
+
+/* Technology */
+.technology{
+    color: black;
+    background: rgb(24, 149, 207);
+}
+.technology .title::before{
+    background-color: black;
+}
+.technology .title::after{
+    background: rgb(24, 149, 207);
+    content: "what I know";
+    color:white;
+}
+.technology .technology-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.technology .technology-container .card{
+    width: calc(44% - 10px);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    /* margin-bottom: 15px;
+    width: 280px;
+    background-color: rgb(52, 157, 243);
+    border-radius: 6px;
+    color: white; */
+}
+.technology .technology-container .card-layout{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+.technology .technology-container .card .box>img{
+    width: 180px;
+    text-align: center;
+    margin: 5%;
+}
+.technology .technology-container .card>hr{
+    margin: 7%;
+}
+.technology .technology-container .card>p{
+    text-align: justify;
+    margin: 7%;
+}
+.text{
+    font-size: 30px;
+    color: white;
+}
+
+/* contact section styling */
+
+.footer-container{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;    
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 30px;
+}
+.g-map{
+    width: 450px;
+    height: 450px;
+}
+.contact-form{
+    background-color: rgb(10, 207, 241);
+    width: 450px;
+    height: 400px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form>input{
+    border: rgb(10, 207, 241) 1px solid;
+    padding: 5px;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 7px;
+    color: white;
+}
+.footer-container{
+    background-color: white;
+}
+.row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.info .head{
+    font-weight: 500;
+    position: absolute;
+    left: 10%;
+    font-family: 'Poppins', sans-serif;
+}
+.info .sub-title{
+    color: #333;
+    position: absolute;
+    left: 17%;
+    font-family: 'Poppins', sans-serif;
+}
+.info a{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    font-size: large;
+}
